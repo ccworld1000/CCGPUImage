@@ -8,10 +8,10 @@
 @property(readwrite, nonatomic, copy) NSArray *rgbCompositeControlPoints;
 
 // Initialization and teardown
-- (id)initWithACVData:(NSData*)data;
+- (instancetype)initWithACVData:(NSData*)data;
 
-- (id)initWithACV:(NSString*)curveFilename;
-- (id)initWithACVURL:(NSURL*)curveFileURL;
+- (instancetype)initWithACV:(NSString*)curveFilename;
+- (instancetype)initWithACVURL:(NSURL*)curveFileURL;
 
 // This lets you set all three red, green, and blue tone curves at once.
 // NOTE: Deprecated this function because this effect can be accomplished

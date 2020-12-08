@@ -83,7 +83,7 @@ NSString *const kGPUImageNormalBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageNormalBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageNormalBlendFragmentShaderString]))
     {

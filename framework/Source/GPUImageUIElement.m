@@ -17,7 +17,7 @@
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithView:(UIView *)inputView;
+- (instancetype)initWithView:(UIView *)inputView;
 {
     if (!(self = [super init]))
     {
@@ -33,7 +33,7 @@
     return self;
 }
 
-- (id)initWithLayer:(CALayer *)inputLayer;
+- (instancetype)initWithLayer:(CALayer *)inputLayer;
 {
     if (!(self = [super init]))
     {

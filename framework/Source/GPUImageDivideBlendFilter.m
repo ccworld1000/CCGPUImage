@@ -82,7 +82,7 @@ NSString *const kGPUImageDivideBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageDivideBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageDivideBlendFragmentShaderString]))
     {

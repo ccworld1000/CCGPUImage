@@ -44,7 +44,7 @@ NSString *const kGPUImageAlphaBlendFragmentShaderString = SHADER_STRING
 
 @synthesize mix = _mix;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageAlphaBlendFragmentShaderString]))
     {

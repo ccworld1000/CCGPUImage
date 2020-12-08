@@ -100,7 +100,7 @@ NSString *const kGPUImageLuminosityBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageLuminosityBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageLuminosityBlendFragmentShaderString]))
     {

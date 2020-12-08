@@ -14,6 +14,6 @@
 
 @property(readwrite, nonatomic) CGFloat verticalTexelSpacing, horizontalTexelSpacing;
 
-- (id)initWithRadius:(NSUInteger)radius;
+- (instancetype)initWithRadius:(NSUInteger)radius;
 
 @end

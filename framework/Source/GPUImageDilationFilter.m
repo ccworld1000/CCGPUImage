@@ -375,7 +375,7 @@ NSString *const kGPUImageDilationRadiusFourFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithRadius:(NSUInteger)dilationRadius;
+- (instancetype)initWithRadius:(NSUInteger)dilationRadius;
 {    
     NSString *fragmentShaderForThisRadius = nil;
     NSString *vertexShaderForThisRadius = nil;
@@ -418,7 +418,7 @@ NSString *const kGPUImageDilationRadiusFourFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithRadius:1]))
     {

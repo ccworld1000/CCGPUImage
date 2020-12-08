@@ -97,7 +97,7 @@ NSString *const kGPUImageMosaicFragmentShaderString = SHADER_STRING
 @synthesize inputTileSize = _inputTileSize, numTiles = _numTiles, displayTileSize = _displayTileSize, colorOn = _colorOn;
 @synthesize tileSet = _tileSet;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageMosaicFragmentShaderString]))
     {

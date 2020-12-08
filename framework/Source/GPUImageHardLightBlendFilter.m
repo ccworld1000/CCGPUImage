@@ -85,7 +85,7 @@ NSString *const kGPUImageHardLightBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageHardLightBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageHardLightBlendFragmentShaderString]))
     {

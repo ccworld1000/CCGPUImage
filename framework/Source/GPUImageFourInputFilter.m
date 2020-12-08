@@ -29,7 +29,7 @@ NSString *const kGPUImageFourInputTextureVertexShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [self initWithVertexShaderFromString:kGPUImageFourInputTextureVertexShaderString fragmentShaderFromString:fragmentShaderString]))
     {
@@ -39,7 +39,7 @@ NSString *const kGPUImageFourInputTextureVertexShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithVertexShaderFromString:vertexShaderString fragmentShaderFromString:fragmentShaderString]))
     {

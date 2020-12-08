@@ -38,7 +38,7 @@ NSString *const kGPUImageScreenBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageScreenBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageScreenBlendFragmentShaderString]))
     {

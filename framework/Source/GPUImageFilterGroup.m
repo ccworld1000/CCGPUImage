@@ -7,7 +7,7 @@
 @synthesize initialFilters = _initialFilters;
 @synthesize inputFilterToIgnoreForUpdates = _inputFilterToIgnoreForUpdates;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

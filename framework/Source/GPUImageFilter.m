@@ -55,7 +55,7 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super init]))
     {
@@ -108,7 +108,7 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [self initWithVertexShaderFromString:kGPUImageVertexShaderString fragmentShaderFromString:fragmentShaderString]))
     {
@@ -118,7 +118,7 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithFragmentShaderFromFile:(NSString *)fragmentShaderFilename;
+- (instancetype)initWithFragmentShaderFromFile:(NSString *)fragmentShaderFilename;
 {
     NSString *fragmentShaderPathname = [[NSBundle mainBundle] pathForResource:fragmentShaderFilename ofType:@"fsh"];
     NSString *fragmentShaderString = [NSString stringWithContentsOfFile:fragmentShaderPathname encoding:NSUTF8StringEncoding error:nil];
@@ -131,7 +131,7 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithFragmentShaderFromString:kGPUImagePassthroughFragmentShaderString]))
     {

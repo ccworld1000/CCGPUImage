@@ -67,7 +67,7 @@ NSString *const kGPUImageChromaKeyFragmentShaderString = SHADER_STRING
 @synthesize thresholdSensitivity = _thresholdSensitivity;
 @synthesize smoothing = _smoothing;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageChromaKeyFragmentShaderString]))
     {

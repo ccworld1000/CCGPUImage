@@ -32,7 +32,7 @@ NSString *const kGPUImageInvertFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageColorInvertFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageInvertFragmentShaderString]))
     {

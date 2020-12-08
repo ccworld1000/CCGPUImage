@@ -191,7 +191,7 @@ NSString *const kGPUImageBilateralFilterFragmentShaderString = SHADER_STRING
 
 @synthesize distanceNormalizationFactor = _distanceNormalizationFactor;
 
-- (id)init;
+- (instancetype)init;
 {
     
     if (!(self = [super initWithFirstStageVertexShaderFromString:kGPUImageBilateralBlurVertexShaderString

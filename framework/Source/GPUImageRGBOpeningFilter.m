@@ -4,7 +4,7 @@
 
 @implementation GPUImageRGBOpeningFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithRadius:1]))
     {
@@ -14,7 +14,7 @@
     return self;
 }
 
-- (id)initWithRadius:(NSUInteger)radius;
+- (instancetype)initWithRadius:(NSUInteger)radius;
 {
     if (!(self = [super init]))
     {

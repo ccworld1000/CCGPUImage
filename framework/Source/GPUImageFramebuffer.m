@@ -33,7 +33,7 @@ void dataProviderUnlockCallback (void *info, const void *data, size_t size);
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithSize:(CGSize)framebufferSize textureOptions:(GPUTextureOptions)fboTextureOptions onlyTexture:(BOOL)onlyGenerateTexture;
+- (instancetype)initWithSize:(CGSize)framebufferSize textureOptions:(GPUTextureOptions)fboTextureOptions onlyTexture:(BOOL)onlyGenerateTexture;
 {
     if (!(self = [super init]))
     {
@@ -61,7 +61,7 @@ void dataProviderUnlockCallback (void *info, const void *data, size_t size);
     return self;
 }
 
-- (id)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture;
+- (instancetype)initWithSize:(CGSize)framebufferSize overriddenTexture:(GLuint)inputTexture;
 {
     if (!(self = [super init]))
     {
@@ -87,7 +87,7 @@ void dataProviderUnlockCallback (void *info, const void *data, size_t size);
     return self;
 }
 
-- (id)initWithSize:(CGSize)framebufferSize;
+- (instancetype)initWithSize:(CGSize)framebufferSize;
 {
     GPUTextureOptions defaultTextureOptions;
     defaultTextureOptions.minFilter = GL_LINEAR;

@@ -21,6 +21,6 @@
 
 @property(readwrite, nonatomic) NSUInteger downsamplingFactor;
 
-- (id)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
+- (instancetype)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
 
 @end

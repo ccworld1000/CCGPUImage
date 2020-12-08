@@ -46,7 +46,7 @@ NSString *const kGPUImageCropFragmentShaderString =  SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithCropRegion:(CGRect)newCropRegion;
+- (instancetype)initWithCropRegion:(CGRect)newCropRegion;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageCropFragmentShaderString]))
     {
@@ -58,7 +58,7 @@ NSString *const kGPUImageCropFragmentShaderString =  SHADER_STRING
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithCropRegion:CGRectMake(0.0, 0.0, 1.0, 1.0)]))
     {

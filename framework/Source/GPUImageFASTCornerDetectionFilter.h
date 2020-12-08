@@ -28,6 +28,6 @@ typedef enum { kGPUImageFAST12Contiguous, kGPUImageFAST12ContiguousNonMaximumSup
 // Step 3: do non-maximum suppression of close corner points
 }
 
-- (id)initWithFASTDetectorVariant:(GPUImageFASTDetectorType)detectorType;
+- (instancetype)initWithFASTDetectorVariant:(GPUImageFASTDetectorType)detectorType;
 
 @end

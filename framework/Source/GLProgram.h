@@ -27,11 +27,11 @@
 @property(readwrite, copy, nonatomic) NSString *fragmentShaderLog;
 @property(readwrite, copy, nonatomic) NSString *programLog;
 
-- (id)initWithVertexShaderString:(NSString *)vShaderString 
+- (instancetype)initWithVertexShaderString:(NSString *)vShaderString 
             fragmentShaderString:(NSString *)fShaderString;
-- (id)initWithVertexShaderString:(NSString *)vShaderString 
+- (instancetype)initWithVertexShaderString:(NSString *)vShaderString 
           fragmentShaderFilename:(NSString *)fShaderFilename;
-- (id)initWithVertexShaderFilename:(NSString *)vShaderFilename 
+- (instancetype)initWithVertexShaderFilename:(NSString *)vShaderFilename 
             fragmentShaderFilename:(NSString *)fShaderFilename;
 - (void)addAttribute:(NSString *)attributeName;
 - (GLuint)attributeIndex:(NSString *)attributeName;

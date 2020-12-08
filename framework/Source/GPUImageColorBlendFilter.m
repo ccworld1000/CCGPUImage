@@ -100,7 +100,7 @@ NSString *const kGPUImageColorBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageColorBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageColorBlendFragmentShaderString]))
     {

@@ -30,7 +30,7 @@ typedef struct GPUByteColorVector GPUByteColorVector;
 @property(nonatomic) BOOL enabled;
 
 // Initialization and teardown
-- (id)initWithImageSize:(CGSize)newImageSize resultsInBGRAFormat:(BOOL)resultsInBGRAFormat;
+- (instancetype)initWithImageSize:(CGSize)newImageSize resultsInBGRAFormat:(BOOL)resultsInBGRAFormat;
 
 // Data access
 - (GPUByteColorVector)colorAtLocation:(CGPoint)locationInImage;

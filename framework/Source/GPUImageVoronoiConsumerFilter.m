@@ -60,7 +60,7 @@ NSString *const kGPUImageVoronoiConsumerFragmentShaderString = SHADER_STRING
 
 @synthesize sizeInPixels = _sizeInPixels;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageVoronoiConsumerFragmentShaderString]))
     {

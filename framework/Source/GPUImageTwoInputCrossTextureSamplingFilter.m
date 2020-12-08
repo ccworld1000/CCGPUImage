@@ -50,7 +50,7 @@ NSString *const kGPUImageTwoInputNearbyTexelSamplingVertexShaderString = SHADER_
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithVertexShaderFromString:kGPUImageTwoInputNearbyTexelSamplingVertexShaderString fragmentShaderFromString:fragmentShaderString]))
     {

@@ -155,7 +155,7 @@ NSString *const kGPUImageToneCurveFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageToneCurveFragmentShaderString]))
     {
@@ -177,7 +177,7 @@ NSString *const kGPUImageToneCurveFragmentShaderString = SHADER_STRING
 }
 
 // This pulls in Adobe ACV curve files to specify the tone curve
-- (id)initWithACVData:(NSData *)data {
+- (instancetype)initWithACVData:(NSData *)data {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageToneCurveFragmentShaderString]))
     {
 		return nil;
@@ -197,13 +197,13 @@ NSString *const kGPUImageToneCurveFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithACV:(NSString*)curveFilename
+- (instancetype)initWithACV:(NSString*)curveFilename
 {
     return [self initWithACVURL:[[NSBundle mainBundle] URLForResource:curveFilename
                                                         withExtension:@"acv"]];
 }
 
-- (id)initWithACVURL:(NSURL*)curveFileURL
+- (instancetype)initWithACVURL:(NSURL*)curveFileURL
 {
     NSData* fileData = [NSData dataWithContentsOfURL:curveFileURL];
     return [self initWithACVData:fileData];

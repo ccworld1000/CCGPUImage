@@ -36,7 +36,7 @@ NSString *const kGPUImageDifferenceBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageDifferenceBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageDifferenceBlendFragmentShaderString]))
     {

@@ -42,7 +42,7 @@ NSString *const kGPUImageExclusionBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageExclusionBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageExclusionBlendFragmentShaderString]))
     {

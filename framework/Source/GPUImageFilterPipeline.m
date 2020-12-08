@@ -14,7 +14,7 @@
 
 #pragma mark Config file init
 
-- (id)initWithConfiguration:(NSDictionary *)configuration input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
+- (instancetype)initWithConfiguration:(NSDictionary *)configuration input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
     self = [super init];
     if (self) {
         self.input = input;
@@ -28,7 +28,7 @@
     return self;
 }
 
-- (id)initWithConfigurationFile:(NSURL *)configuration input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
+- (instancetype)initWithConfigurationFile:(NSURL *)configuration input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
     return [self initWithConfiguration:[NSDictionary dictionaryWithContentsOfURL:configuration] input:input output:output];
 }
 
@@ -137,7 +137,7 @@
 
 #pragma mark Regular init
 
-- (id)initWithOrderedFilters:(NSArray *)filters input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
+- (instancetype)initWithOrderedFilters:(NSArray *)filters input:(GPUImageOutput *)input output:(id <GPUImageInput>)output {
     self = [super init];
     if (self) {
         self.input = input;

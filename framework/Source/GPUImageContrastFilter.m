@@ -39,7 +39,7 @@ NSString *const kGPUImageContrastFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageContrastFragmentShaderString]))
     {

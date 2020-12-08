@@ -16,7 +16,7 @@ typedef enum { kGPUImageHistogramRed, kGPUImageHistogramGreen, kGPUImageHistogra
 @property(readwrite, nonatomic) NSUInteger downsamplingFactor;
 
 // Initialization and teardown
-- (id)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
+- (instancetype)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
 - (void)initializeSecondaryAttributes;
 
 @end

@@ -9,6 +9,6 @@
 @property(readwrite, nonatomic) CGRect cropRegion;
 
 // Initialization and teardown
-- (id)initWithCropRegion:(CGRect)newCropRegion;
+- (instancetype)initWithCropRegion:(CGRect)newCropRegion;
 
 @end

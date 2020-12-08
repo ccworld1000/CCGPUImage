@@ -5,7 +5,7 @@
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithTexture:(GLuint)newInputTexture size:(CGSize)newTextureSize;
+- (instancetype)initWithTexture:(GLuint)newInputTexture size:(CGSize)newTextureSize;
 {
     if (!(self = [super init]))
     {

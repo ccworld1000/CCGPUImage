@@ -38,7 +38,7 @@ NSString *const kGPUImageLinearBurnBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageLinearBurnBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageLinearBurnBlendFragmentShaderString]))
     {

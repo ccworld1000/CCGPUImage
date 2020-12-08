@@ -13,7 +13,7 @@
 @synthesize lineDetectionThreshold;
 @synthesize intermediateImages = _intermediateImages;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

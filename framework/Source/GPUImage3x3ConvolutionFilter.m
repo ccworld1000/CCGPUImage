@@ -87,7 +87,7 @@ NSString *const kGPUImage3x3ConvolutionFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithFragmentShaderFromString:kGPUImage3x3ConvolutionFragmentShaderString]))
     {
@@ -103,7 +103,7 @@ NSString *const kGPUImage3x3ConvolutionFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithFragmentShaderFromString:fragmentShaderString]))
     {

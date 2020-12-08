@@ -71,7 +71,7 @@ NSString *const kGPUMonochromeFragmentShaderString = SHADER_STRING
 @synthesize intensity = _intensity;
 @synthesize color = _color;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUMonochromeFragmentShaderString]))
     {

@@ -87,7 +87,7 @@ NSString *const kGPUImageLaplacianFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageLaplacianFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageLaplacianFragmentShaderString]))
     {

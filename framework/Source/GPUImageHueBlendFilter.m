@@ -199,7 +199,7 @@ NSString *const kGPUImageHueBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageHueBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageHueBlendFragmentShaderString]))
     {

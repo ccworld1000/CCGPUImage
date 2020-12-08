@@ -77,7 +77,7 @@ NSString *const kGPUImageHoughAccumulationFBOReadFragmentShaderString = SHADER_S
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     NSString *fragmentShaderToUse = nil;
     

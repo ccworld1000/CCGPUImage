@@ -200,7 +200,7 @@ NSString *const kGPUImageSaturationBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageSaturationBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageSaturationBlendFragmentShaderString]))
     {

@@ -146,7 +146,7 @@ NSString *const kGPUImageColourFASTSamplingFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithVertexShaderFromString:kGPUImageColourFASTSamplingVertexShaderString fragmentShaderFromString:kGPUImageColourFASTSamplingFragmentShaderString]))
     {

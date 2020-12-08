@@ -40,7 +40,7 @@ NSString *const kGPUImageSoftLightBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageSoftLightBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageSoftLightBlendFragmentShaderString]))
     {

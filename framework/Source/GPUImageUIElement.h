@@ -3,8 +3,8 @@
 @interface GPUImageUIElement : GPUImageOutput
 
 // Initialization and teardown
-- (id)initWithView:(UIView *)inputView;
-- (id)initWithLayer:(CALayer *)inputLayer;
+- (instancetype)initWithView:(UIView *)inputView;
+- (instancetype)initWithLayer:(CALayer *)inputLayer;
 
 // Layer management
 - (CGSize)layerSizeInPixels;

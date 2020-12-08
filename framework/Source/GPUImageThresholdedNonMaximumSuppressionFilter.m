@@ -250,7 +250,7 @@ NSString *const kGPUImageThresholdedNonMaximumSuppressionPackedColorspaceFragmen
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithPackedColorspace:NO]))
     {
@@ -260,7 +260,7 @@ NSString *const kGPUImageThresholdedNonMaximumSuppressionPackedColorspaceFragmen
     return self;
 }
 
-- (id)initWithPackedColorspace:(BOOL)inputUsesPackedColorspace;
+- (instancetype)initWithPackedColorspace:(BOOL)inputUsesPackedColorspace;
 {
     NSString *shaderString;
     if (inputUsesPackedColorspace)

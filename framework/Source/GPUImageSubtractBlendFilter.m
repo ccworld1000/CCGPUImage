@@ -38,7 +38,7 @@ NSString *const kGPUImageSubtractBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageSubtractBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageSubtractBlendFragmentShaderString]))
     {

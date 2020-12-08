@@ -57,7 +57,7 @@ NSString *const kGPUImageFASTDetectorFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageFASTCornerDetectionFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithFASTDetectorVariant:kGPUImageFAST12ContiguousNonMaximumSuppressed]))
     {
@@ -67,7 +67,7 @@ NSString *const kGPUImageFASTDetectorFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithFASTDetectorVariant:(GPUImageFASTDetectorType)detectorType;
+- (instancetype)initWithFASTDetectorVariant:(GPUImageFASTDetectorType)detectorType;
 {
     if (!(self = [super init]))
     {

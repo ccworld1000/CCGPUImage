@@ -39,7 +39,7 @@ NSString *const kGPUImagePosterizeFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImagePosterizeFragmentShaderString]))
     {

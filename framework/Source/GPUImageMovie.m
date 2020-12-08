@@ -48,7 +48,7 @@
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithURL:(NSURL *)url;
+- (instancetype)initWithURL:(NSURL *)url;
 {
     if (!(self = [super init])) 
     {
@@ -63,7 +63,7 @@
     return self;
 }
 
-- (id)initWithAsset:(AVAsset *)asset;
+- (instancetype)initWithAsset:(AVAsset *)asset;
 {
     if (!(self = [super init])) 
     {
@@ -78,7 +78,7 @@
     return self;
 }
 
-- (id)initWithPlayerItem:(AVPlayerItem *)playerItem;
+- (instancetype)initWithPlayerItem:(AVPlayerItem *)playerItem;
 {
     if (!(self = [super init]))
     {

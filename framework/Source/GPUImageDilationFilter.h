@@ -11,6 +11,6 @@ extern NSString *const kGPUImageDilationRadiusFourVertexShaderString;
 @interface GPUImageDilationFilter : GPUImageTwoPassTextureSamplingFilter
 
 // Acceptable values for dilationRadius, which sets the distance in pixels to sample out from the center, are 1, 2, 3, and 4.
-- (id)initWithRadius:(NSUInteger)dilationRadius;
+- (instancetype)initWithRadius:(NSUInteger)dilationRadius;
 
 @end

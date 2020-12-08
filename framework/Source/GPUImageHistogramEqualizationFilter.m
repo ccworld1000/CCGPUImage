@@ -195,7 +195,7 @@ NSString *const kGPUImageLuminanceHistogramEqualizationFragmentShaderString = SH
 #pragma mark -
 #pragma mark Initialization
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithHistogramType:kGPUImageHistogramRGB]))
     {
@@ -205,7 +205,7 @@ NSString *const kGPUImageLuminanceHistogramEqualizationFragmentShaderString = SH
     return self;
 }
 
-- (id)initWithHistogramType:(GPUImageHistogramType)newHistogramType
+- (instancetype)initWithHistogramType:(GPUImageHistogramType)newHistogramType
 {
     if (!(self = [super init]))
     {

@@ -49,7 +49,7 @@ NSString *const kGPUImageShiTomasiCornerDetectionFragmentShaderString = SHADER_S
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithCornerDetectionFragmentShader:kGPUImageShiTomasiCornerDetectionFragmentShaderString]))
     {

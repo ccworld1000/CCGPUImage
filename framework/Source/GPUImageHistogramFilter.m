@@ -103,7 +103,7 @@ NSString *const kGPUImageHistogramAccumulationFragmentShaderString = SHADER_STRI
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
+- (instancetype)initWithHistogramType:(GPUImageHistogramType)newHistogramType;
 {
     switch (newHistogramType)
     {
@@ -200,7 +200,7 @@ NSString *const kGPUImageHistogramAccumulationFragmentShaderString = SHADER_STRI
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithHistogramType:kGPUImageHistogramRGB]))
     {

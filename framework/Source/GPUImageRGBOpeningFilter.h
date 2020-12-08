@@ -12,6 +12,6 @@
     GPUImageRGBDilationFilter *dilationFilter;
 }
 
-- (id)initWithRadius:(NSUInteger)radius;
+- (instancetype)initWithRadius:(NSUInteger)radius;
 
 @end

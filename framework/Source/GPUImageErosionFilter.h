@@ -6,6 +6,6 @@
 @interface GPUImageErosionFilter : GPUImageTwoPassTextureSamplingFilter
 
 // Acceptable values for erosionRadius, which sets the distance in pixels to sample out from the center, are 1, 2, 3, and 4.
-- (id)initWithRadius:(NSUInteger)erosionRadius;
+- (instancetype)initWithRadius:(NSUInteger)erosionRadius;
 
 @end

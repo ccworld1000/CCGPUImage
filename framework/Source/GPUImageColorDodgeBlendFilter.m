@@ -61,7 +61,7 @@ NSString *const kGPUImageColorDodgeBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageColorDodgeBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageColorDodgeBlendFragmentShaderString]))
     {

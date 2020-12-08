@@ -107,7 +107,7 @@ NSString *const kGPUImageThresholdEdgeDetectionFragmentShaderString = SHADER_STR
 
 @synthesize threshold = _threshold;
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithFragmentShaderFromString:fragmentShaderString]))
     {
@@ -122,7 +122,7 @@ NSString *const kGPUImageThresholdEdgeDetectionFragmentShaderString = SHADER_STR
 }
 
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithFragmentShaderFromString:kGPUImageThresholdEdgeDetectionFragmentShaderString]))
     {

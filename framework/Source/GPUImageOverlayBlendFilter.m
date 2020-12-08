@@ -80,7 +80,7 @@ NSString *const kGPUImageOverlayBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageOverlayBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
   if (!(self = [super initWithFragmentShaderFromString:kGPUImageOverlayBlendFragmentShaderString]))
   {

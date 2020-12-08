@@ -49,7 +49,7 @@ NSString *const kGPUImageSolarizeFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageSolarizeFragmentShaderString]))
     {

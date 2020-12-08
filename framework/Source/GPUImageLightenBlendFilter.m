@@ -38,7 +38,7 @@ NSString *const kGPUImageLightenBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageLightenBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageLightenBlendFragmentShaderString]))
     {

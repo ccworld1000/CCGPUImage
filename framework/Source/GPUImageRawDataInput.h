@@ -25,9 +25,9 @@ typedef enum {
 }
 
 // Initialization and teardown
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize;
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat;
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat type:(GPUPixelType)pixelType;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat type:(GPUPixelType)pixelType;
 
 /** Input data pixel format
  */

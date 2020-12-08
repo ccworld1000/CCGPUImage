@@ -38,7 +38,7 @@ NSString *const kGPUImageSourceOverBlendFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageSourceOverBlendFilter
 
-- (id)init;
+- (instancetype)init;
 {
   if (!(self = [super initWithFragmentShaderFromString:kGPUImageSourceOverBlendFragmentShaderString]))
   {

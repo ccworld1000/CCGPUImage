@@ -77,7 +77,7 @@ NSString *const kGPUImageSphereRefractionFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithFragmentShaderFromString:kGPUImageSphereRefractionFragmentShaderString]))
     {
@@ -87,7 +87,7 @@ NSString *const kGPUImageSphereRefractionFragmentShaderString = SHADER_STRING
     return self;
 }
 
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 {
     if (!(self = [super initWithFragmentShaderFromString:fragmentShaderString]))
     {

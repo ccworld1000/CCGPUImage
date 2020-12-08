@@ -100,7 +100,7 @@ NSString *const kGPUImageHueFragmentShaderString = SHADER_STRING
 @implementation GPUImageHueFilter
 @synthesize hue;
 
-- (id)init
+- (instancetype)init
 {
     if(! (self = [super initWithFragmentShaderFromString:kGPUImageHueFragmentShaderString]) )
     {

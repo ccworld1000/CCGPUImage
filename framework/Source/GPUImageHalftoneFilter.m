@@ -64,7 +64,7 @@ NSString *const kGPUImageHalftoneFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageHalftoneFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageHalftoneFragmentShaderString]))
     {

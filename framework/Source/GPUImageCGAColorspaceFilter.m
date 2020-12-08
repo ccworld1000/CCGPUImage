@@ -100,7 +100,7 @@ NSString *const kGPUImageCGAColorspaceFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageCGAColorspaceFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageCGAColorspaceFragmentShaderString]))
     {

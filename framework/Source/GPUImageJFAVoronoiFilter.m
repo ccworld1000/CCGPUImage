@@ -323,7 +323,7 @@ NSString *const kGPUImageJFAVoronoiFragmentShaderString = SHADER_STRING
 
 @synthesize sizeInPixels = _sizeInPixels;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithVertexShaderFromString:kGPUImageJFAVoronoiVertexShaderString fragmentShaderFromString:kGPUImageJFAVoronoiFragmentShaderString]))
     {

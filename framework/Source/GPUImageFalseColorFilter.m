@@ -50,7 +50,7 @@ NSString *const kGPUFalseColorFragmentShaderString = SHADER_STRING
 @synthesize secondColor = _secondColor;
 @synthesize firstColor = _firstColor;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUFalseColorFragmentShaderString]))
     {

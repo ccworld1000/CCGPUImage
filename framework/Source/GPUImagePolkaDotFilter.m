@@ -58,7 +58,7 @@ NSString *const kGPUImagePolkaDotFragmentShaderString = SHADER_STRING
 
 @synthesize dotScaling = _dotScaling;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImagePolkaDotFragmentShaderString]))
     {

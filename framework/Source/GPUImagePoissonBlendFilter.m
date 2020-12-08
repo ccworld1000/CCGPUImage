@@ -99,7 +99,7 @@ NSString *const kGPUImagePoissonBlendFragmentShaderString = SHADER_STRING
 @synthesize mix = _mix;
 @synthesize numIterations = _numIterations;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImagePoissonBlendFragmentShaderString]))
     {

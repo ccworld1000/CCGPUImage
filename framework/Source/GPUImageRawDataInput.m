@@ -12,7 +12,7 @@
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize;
 {
     if (!(self = [self initWithBytes:bytesToUpload size:imageSize pixelFormat:GPUPixelFormatBGRA type:GPUPixelTypeUByte]))
     {
@@ -22,7 +22,7 @@
 	return self;
 }
 
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat;
 {
     if (!(self = [self initWithBytes:bytesToUpload size:imageSize pixelFormat:pixelFormat type:GPUPixelTypeUByte]))
     {
@@ -32,7 +32,7 @@
 	return self;
 }
 
-- (id)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat type:(GPUPixelType)pixelType;
+- (instancetype)initWithBytes:(GLubyte *)bytesToUpload size:(CGSize)imageSize pixelFormat:(GPUPixelFormat)pixelFormat type:(GPUPixelType)pixelType;
 {
     if (!(self = [super init]))
     {

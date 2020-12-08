@@ -54,7 +54,7 @@ NSString *const kGPUImageMaskShaderString = SHADER_STRING
 
 @implementation GPUImageMaskFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageMaskShaderString]))
     {

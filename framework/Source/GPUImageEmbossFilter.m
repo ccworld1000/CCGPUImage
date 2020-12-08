@@ -4,7 +4,7 @@
 
 @synthesize intensity = _intensity; 
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

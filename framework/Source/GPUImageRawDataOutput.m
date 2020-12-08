@@ -34,7 +34,7 @@
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithImageSize:(CGSize)newImageSize resultsInBGRAFormat:(BOOL)resultsInBGRAFormat;
+- (instancetype)initWithImageSize:(CGSize)newImageSize resultsInBGRAFormat:(BOOL)resultsInBGRAFormat;
 {
     if (!(self = [super init]))
     {

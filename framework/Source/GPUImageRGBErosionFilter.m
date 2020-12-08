@@ -248,7 +248,7 @@ NSString *const kGPUImageRGBErosionRadiusFourFragmentShaderString = SHADER_STRIN
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)initWithRadius:(NSUInteger)erosionRadius;
+- (instancetype)initWithRadius:(NSUInteger)erosionRadius;
 {    
     NSString *fragmentShaderForThisRadius = nil;
     NSString *vertexShaderForThisRadius = nil;
@@ -291,7 +291,7 @@ NSString *const kGPUImageRGBErosionRadiusFourFragmentShaderString = SHADER_STRIN
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithRadius:1]))
     {

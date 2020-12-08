@@ -36,7 +36,7 @@ NSString *const kGPUSolidColorFragmentShaderString = SHADER_STRING
 
 @synthesize color = _color;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUSolidColorFragmentShaderString]))
     {

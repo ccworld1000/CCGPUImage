@@ -52,7 +52,7 @@ NSString *const kGPUImageUnsharpMaskFragmentShaderString = SHADER_STRING
 @synthesize blurRadiusInPixels;
 @synthesize intensity = _intensity;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

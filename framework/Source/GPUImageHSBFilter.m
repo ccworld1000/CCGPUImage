@@ -4,7 +4,7 @@
     float matrix[4][4];
 }
 
-- (id)init
+- (instancetype)init
 {
     self = [super init];
     if (self) {

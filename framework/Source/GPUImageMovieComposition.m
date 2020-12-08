@@ -15,7 +15,7 @@
 @synthesize videoComposition = _videoComposition;
 @synthesize audioMix = _audioMix;
 
-- (id)initWithComposition:(AVComposition*)compositon
+- (instancetype)initWithComposition:(AVComposition*)compositon
       andVideoComposition:(AVVideoComposition*)videoComposition
               andAudioMix:(AVAudioMix*)audioMix {
     if (!(self = [super init]))

@@ -44,9 +44,9 @@
 @property (readonly, nonatomic) BOOL videoEncodingIsFinished;
 
 /// @name Initialization and teardown
-- (id)initWithAsset:(AVAsset *)asset;
-- (id)initWithPlayerItem:(AVPlayerItem *)playerItem;
-- (id)initWithURL:(NSURL *)url;
+- (instancetype)initWithAsset:(AVAsset *)asset;
+- (instancetype)initWithPlayerItem:(AVPlayerItem *)playerItem;
+- (instancetype)initWithURL:(NSURL *)url;
 - (void)yuvConversionSetup;
 
 /// @name Movie processing

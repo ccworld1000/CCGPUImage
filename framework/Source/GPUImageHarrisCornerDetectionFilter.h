@@ -48,6 +48,6 @@
 @property(nonatomic, readonly, strong) NSMutableArray *intermediateImages;
 
 // Initialization and teardown
-- (id)initWithCornerDetectionFragmentShader:(NSString *)cornerDetectionFragmentShader;
+- (instancetype)initWithCornerDetectionFragmentShader:(NSString *)cornerDetectionFragmentShader;
 
 @end

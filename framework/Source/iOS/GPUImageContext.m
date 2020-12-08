@@ -25,7 +25,7 @@ extern dispatch_queue_attr_t GPUImageDefaultQueueAttribute(void);
 
 static void *openGLESContextQueueKey;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

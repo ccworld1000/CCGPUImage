@@ -78,7 +78,7 @@ typedef struct GPUMatrix3x3 GPUMatrix3x3;
  @param vertexShaderString Source code of the vertex shader to use
  @param fragmentShaderString Source code of the fragment shader to use
  */
-- (id)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithVertexShaderFromString:(NSString *)vertexShaderString fragmentShaderFromString:(NSString *)fragmentShaderString;
 
 /**
  Initialize with a fragment shader
@@ -86,12 +86,12 @@ typedef struct GPUMatrix3x3 GPUMatrix3x3;
  You may take advantage of the SHADER_STRING macro to write your shader in-line.
  @param fragmentShaderString Source code of fragment shader to use
  */
-- (id)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
+- (instancetype)initWithFragmentShaderFromString:(NSString *)fragmentShaderString;
 /**
  Initialize with a fragment shader
  @param fragmentShaderFilename Filename of fragment shader to load
  */
-- (id)initWithFragmentShaderFromFile:(NSString *)fragmentShaderFilename;
+- (instancetype)initWithFragmentShaderFromFile:(NSString *)fragmentShaderFilename;
 - (void)initializeAttributes;
 - (void)setupFilterForSize:(CGSize)filterFrameSize;
 - (CGSize)rotatedSize:(CGSize)sizeToRotate forIndex:(NSInteger)textureIndex;

@@ -60,7 +60,7 @@ NSString *const kGPUImageGaussianSelectiveBlurFragmentShaderString = SHADER_STRI
 @synthesize blurRadiusInPixels = _blurRadiusInPixels;
 @synthesize aspectRatio = _aspectRatio;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

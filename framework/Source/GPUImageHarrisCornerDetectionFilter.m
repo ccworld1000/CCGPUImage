@@ -76,7 +76,7 @@ NSString *const kGPUImageHarrisCornerDetectionFragmentShaderString = SHADER_STRI
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [self initWithCornerDetectionFragmentShader:kGPUImageHarrisCornerDetectionFragmentShaderString]))
     {
@@ -86,7 +86,7 @@ NSString *const kGPUImageHarrisCornerDetectionFragmentShaderString = SHADER_STRI
     return self;
 }
 
-- (id)initWithCornerDetectionFragmentShader:(NSString *)cornerDetectionFragmentShader;
+- (instancetype)initWithCornerDetectionFragmentShader:(NSString *)cornerDetectionFragmentShader;
 {
     if (!(self = [super init]))
     {

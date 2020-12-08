@@ -60,7 +60,7 @@ NSString *const kGPUImageTiltShiftFragmentShaderString = SHADER_STRING
 @synthesize bottomFocusLevel = _bottomFocusLevel;
 @synthesize focusFallOffRate = _focusFallOffRate;
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

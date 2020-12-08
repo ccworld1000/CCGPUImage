@@ -4,7 +4,7 @@
 
 @implementation GPUImageAmatorkaFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

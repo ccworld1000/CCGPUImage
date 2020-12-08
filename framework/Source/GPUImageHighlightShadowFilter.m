@@ -56,7 +56,7 @@ NSString *const kGPUImageHighlightShadowFragmentShaderString = SHADER_STRING
 #pragma mark -
 #pragma mark Initialization and teardown
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super initWithFragmentShaderFromString:kGPUImageHighlightShadowFragmentShaderString]))
     {

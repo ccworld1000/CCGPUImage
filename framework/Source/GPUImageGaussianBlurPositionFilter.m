@@ -151,7 +151,7 @@ NSString *const kGPUImageGaussianBlurPositionFragmentShaderString = SHADER_STRIN
     return self;
 }
 
-- (id)init;
+- (instancetype)init;
 {
     return [self initWithFirstStageVertexShaderFromString:nil
                        firstStageFragmentShaderFromString:nil
