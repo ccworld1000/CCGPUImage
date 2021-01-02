@@ -67,9 +67,9 @@ fastlane/test_output
 
 iOSInjectionProject/
 
-*.podspec
 Pods/
 Podfile.lock
 .DS_Store
 
 CC
+auto.sh
