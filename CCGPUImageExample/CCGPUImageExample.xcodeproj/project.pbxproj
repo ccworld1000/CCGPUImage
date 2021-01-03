@@ -14,6 +14,8 @@
 		42934E3E25A1A57800219C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3D25A1A57800219C92 /* Assets.xcassets */; };
 		42934E4125A1A57800219C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3F25A1A57800219C92 /* LaunchScreen.storyboard */; };
 		42934E4425A1A57800219C92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E4325A1A57800219C92 /* main.m */; };
+		42B0F63725A200E800DEBBA9 /* CCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B0F63625A200E800DEBBA9 /* CCTableViewController.m */; };
+		42B0F65025A2064800DEBBA9 /* SimpleImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */; };
 		AB75DDFA4675B9B283BE09DF /* Pods_CCGPUImageExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A087DE96BFC48B45DE767D34 /* Pods_CCGPUImageExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,10 @@
 		42934E4025A1A57800219C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42934E4225A1A57800219C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42934E4325A1A57800219C92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42B0F63525A200E800DEBBA9 /* CCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTableViewController.h; sourceTree = "<group>"; };
+		42B0F63625A200E800DEBBA9 /* CCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTableViewController.m; sourceTree = "<group>"; };
+		42B0F64E25A2064800DEBBA9 /* SimpleImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleImageFilter.h; sourceTree = "<group>"; };
+		42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleImageFilter.m; sourceTree = "<group>"; };
 		A087DE96BFC48B45DE767D34 /* Pods_CCGPUImageExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CCGPUImageExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFA9C2F12A3C51103A3821BC /* Pods-CCGPUImageExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCGPUImageExample.debug.xcconfig"; path = "Target Support Files/Pods-CCGPUImageExample/Pods-CCGPUImageExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +85,10 @@
 				42934E3F25A1A57800219C92 /* LaunchScreen.storyboard */,
 				42934E4225A1A57800219C92 /* Info.plist */,
 				42934E4325A1A57800219C92 /* main.m */,
+				42B0F63525A200E800DEBBA9 /* CCTableViewController.h */,
+				42B0F63625A200E800DEBBA9 /* CCTableViewController.m */,
+				42B0F64E25A2064800DEBBA9 /* SimpleImageFilter.h */,
+				42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */,
 			);
 			path = CCGPUImageExample;
 			sourceTree = "<group>";
@@ -217,7 +227,9 @@
 				42934E3925A1A57700219C92 /* ViewController.m in Sources */,
 				42934E3325A1A57700219C92 /* AppDelegate.m in Sources */,
 				42934E4425A1A57800219C92 /* main.m in Sources */,
+				42B0F63725A200E800DEBBA9 /* CCTableViewController.m in Sources */,
 				42934E3625A1A57700219C92 /* SceneDelegate.m in Sources */,
+				42B0F65025A2064800DEBBA9 /* SimpleImageFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

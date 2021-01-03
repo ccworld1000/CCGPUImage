@@ -73,3 +73,5 @@ Podfile.lock
 
 CC
 auto.sh
+
+CCGPUImageExample/Podfile
