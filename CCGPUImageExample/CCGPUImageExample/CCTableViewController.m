@@ -7,6 +7,7 @@
 //
 
 #import "CCTableViewController.h"
+#import <CCDebug.h>
 
 @interface CCTableViewController ()
 
@@ -19,6 +20,7 @@
 - (NSArray *)exampleList {
     return @[
         @"SimpleImageFilter",
+        @"SimpleImageFilterCC",
     ];
 }
 
@@ -50,6 +52,28 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    NSInteger row = indexPath.row;
+    if (row < self.exampleList.count) {
+        NSString *cellVC = self.exampleList[row];
+        Class c = NSClassFromString(cellVC);
+        
+        if (!c) {
+            error(@"VC does not exist");
+            return;
+        }
+        UIViewController *vc = [c new];
+        if (!vc) {
+            error(@"VC not implemented");
+            return;;
+        } else {
+            vc.title = cellVC;
+        }
 
+        [self.navigationController pushViewController:vc animated:NO];
+    }
+}
 
 @end

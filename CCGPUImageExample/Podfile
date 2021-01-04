@@ -6,5 +6,6 @@ target 'CCGPUImageExample' do
   use_frameworks!
 
   # Pods for CCGPUImageExample
+  pod 'CCDebug'
 	pod 'CCGPUImage'
 end

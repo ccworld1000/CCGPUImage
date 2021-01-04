@@ -501,9 +501,6 @@ static CVReturn renderCallback(CVDisplayLinkRef displayLink,
 
 - (void)processMovieFrame:(CMSampleBufferRef)movieSampleBuffer; 
 {
-//    CMTimeGetSeconds
-//    CMTimeSubtract
-    
     CMTime currentSampleTime = CMSampleBufferGetOutputPresentationTimeStamp(movieSampleBuffer);
     CVImageBufferRef movieFrame = CMSampleBufferGetImageBuffer(movieSampleBuffer);
 
