@@ -7,6 +7,10 @@
 //
 
 #import "GPUImageBeautifyFilter.h"
+#import "GPUImageThreeInputFilter.h"
+#import "GPUImageBilateralFilter.h"
+#import "GPUImageCannyEdgeDetectionFilter.h"
+#import "GPUImageHSBFilter.h"
 
 // Internal CombinationFilter(It should not be used outside)
 @interface GPUImageCombinationFilter : GPUImageThreeInputFilter
@@ -53,7 +57,7 @@ NSString *const kGPUImageBeautifyFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageCombinationFilter
 
-- (id)init {
+- (instancetype)init {
     if (self = [super initWithFragmentShaderFromString:kGPUImageBeautifyFragmentShaderString]) {
         smoothDegreeUniform = [filterProgram uniformIndex:@"smoothDegree"];
     }
@@ -68,9 +72,18 @@ NSString *const kGPUImageBeautifyFragmentShaderString = SHADER_STRING
 
 @end
 
+@interface GPUImageBeautifyFilter () {
+    GPUImageBilateralFilter *bilateralFilter;
+    GPUImageCannyEdgeDetectionFilter *cannyEdgeFilter;
+    GPUImageCombinationFilter *combinationFilter;
+    GPUImageHSBFilter *hsbFilter;
+}
+
+@end
+
 @implementation GPUImageBeautifyFilter
 
-- (id)init;
+- (instancetype)init;
 {
     if (!(self = [super init]))
     {

@@ -20,7 +20,7 @@
 - (NSArray *)exampleList {
     return @[
         @"SimpleImageFilter",
-        @"SimpleImageFilterCC",
+        @"BeautifyFace",
     ];
 }
 
