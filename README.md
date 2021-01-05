@@ -19,4 +19,5 @@ pod 'CCGPUImage'
 
 # beauty effect
 
-![BeautifyFace.png](https://raw.github.com/ccworld1000/CCGPUImage/master/Screenshots/CBeautifyFace.png)
+![BeautifyFace.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/BeautifyFace.png?raw=true)
+
