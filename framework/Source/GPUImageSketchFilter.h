@@ -5,7 +5,5 @@
  This is just the Sobel edge detection filter with the colors inverted.
  */
 @interface GPUImageSketchFilter : GPUImageSobelEdgeDetectionFilter
-{
-}
 
 @end

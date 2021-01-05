@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CCGPUImage"
-  spec.version      = "0.1.10"
+  spec.version      = "0.1.11"
   spec.summary      = "CCGPUImage change for GPUImage, An open source iOS framework for GPU-based image and video processing."
 
   # This description is used to generate tags and improve search results.

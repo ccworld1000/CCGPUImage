@@ -6,11 +6,11 @@
 //  Copyright © 2021 - now youhua deng (deng you hua | CC) <ccworld1000@gmail.com>. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "CC2ImageVCBase.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SimpleImageFilter : UIViewController
+@interface SimpleImageFilter : CC2ImageVCBase
 
 @end
 

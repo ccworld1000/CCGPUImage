@@ -14,9 +14,17 @@
 
 @implementation SimpleImageFilter
 
+- (void)refresBottomImage {
+    self.bottomImage.image = [UIImage imageWithCGImage:[[[GPUImageSketchFilter alloc] init] newCGImageByFilteringImage:self.topImage.image]];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresBottomImage)];
+    self.topImage.image = [UIImage imageNamed:@"haha"];
+    [self refresBottomImage];
 }
 
 @end

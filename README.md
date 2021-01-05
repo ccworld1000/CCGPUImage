@@ -17,7 +17,11 @@ pod 'CCGPUImage'
 }
 ```
 
-# beauty effect
+# BeautifyFace effect
 
 ![BeautifyFace.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/BeautifyFace.png?raw=true)
+
+# SimpleImageFilter effect
+
+![SimpleImageFilter.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/SimpleImageFilter.png?raw=true)
 

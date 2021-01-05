@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		420A040C25A356720041B152 /* CCViewControllerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 420A040B25A356720041B152 /* CCViewControllerBase.m */; };
 		420A041025A3570E0041B152 /* BeautifyFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 420A040F25A3570E0041B152 /* BeautifyFace.m */; };
+		4215096D25A48995006AB986 /* CC2ImageVCBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4215096C25A48995006AB986 /* CC2ImageVCBase.m */; };
 		42934E3325A1A57700219C92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E3225A1A57700219C92 /* AppDelegate.m */; };
 		42934E3625A1A57700219C92 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E3525A1A57700219C92 /* SceneDelegate.m */; };
 		42934E3C25A1A57700219C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3A25A1A57700219C92 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		420A040B25A356720041B152 /* CCViewControllerBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCViewControllerBase.m; sourceTree = "<group>"; };
 		420A040E25A3570E0041B152 /* BeautifyFace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautifyFace.h; sourceTree = "<group>"; };
 		420A040F25A3570E0041B152 /* BeautifyFace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifyFace.m; sourceTree = "<group>"; };
+		4215096B25A48995006AB986 /* CC2ImageVCBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CC2ImageVCBase.h; sourceTree = "<group>"; };
+		4215096C25A48995006AB986 /* CC2ImageVCBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CC2ImageVCBase.m; sourceTree = "<group>"; };
 		42934E2E25A1A57700219C92 /* CCGPUImageExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCGPUImageExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42934E3125A1A57700219C92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42934E3225A1A57700219C92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				4215096125A4231F006AB986 /* Example */,
 				420A040A25A356720041B152 /* CCViewControllerBase.h */,
 				420A040B25A356720041B152 /* CCViewControllerBase.m */,
+				4215096B25A48995006AB986 /* CC2ImageVCBase.h */,
+				4215096C25A48995006AB986 /* CC2ImageVCBase.m */,
 				42B0F63525A200E800DEBBA9 /* CCTableViewController.h */,
 				42B0F63625A200E800DEBBA9 /* CCTableViewController.m */,
 				42934E3125A1A57700219C92 /* AppDelegate.h */,
@@ -239,6 +244,7 @@
 			files = (
 				420A041025A3570E0041B152 /* BeautifyFace.m in Sources */,
 				420A040C25A356720041B152 /* CCViewControllerBase.m in Sources */,
+				4215096D25A48995006AB986 /* CC2ImageVCBase.m in Sources */,
 				42934E3325A1A57700219C92 /* AppDelegate.m in Sources */,
 				42934E4425A1A57800219C92 /* main.m in Sources */,
 				42B0F63725A200E800DEBBA9 /* CCTableViewController.m in Sources */,
