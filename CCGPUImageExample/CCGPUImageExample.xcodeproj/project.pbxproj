@@ -11,7 +11,6 @@
 		420A041025A3570E0041B152 /* BeautifyFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 420A040F25A3570E0041B152 /* BeautifyFace.m */; };
 		42934E3325A1A57700219C92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E3225A1A57700219C92 /* AppDelegate.m */; };
 		42934E3625A1A57700219C92 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E3525A1A57700219C92 /* SceneDelegate.m */; };
-		42934E3925A1A57700219C92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E3825A1A57700219C92 /* ViewController.m */; };
 		42934E3C25A1A57700219C92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3A25A1A57700219C92 /* Main.storyboard */; };
 		42934E3E25A1A57800219C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3D25A1A57800219C92 /* Assets.xcassets */; };
 		42934E4125A1A57800219C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3F25A1A57800219C92 /* LaunchScreen.storyboard */; };
@@ -32,8 +31,6 @@
 		42934E3225A1A57700219C92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		42934E3425A1A57700219C92 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		42934E3525A1A57700219C92 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		42934E3725A1A57700219C92 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		42934E3825A1A57700219C92 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		42934E3B25A1A57700219C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42934E3D25A1A57800219C92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42934E4025A1A57800219C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4215096125A4231F006AB986 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				42B0F64E25A2064800DEBBA9 /* SimpleImageFilter.h */,
+				42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */,
+				420A040E25A3570E0041B152 /* BeautifyFace.h */,
+				420A040F25A3570E0041B152 /* BeautifyFace.m */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		42934E2525A1A57700219C92 = {
 			isa = PBXGroup;
 			children = (
@@ -80,25 +88,20 @@
 		42934E3025A1A57700219C92 /* CCGPUImageExample */ = {
 			isa = PBXGroup;
 			children = (
+				4215096125A4231F006AB986 /* Example */,
+				420A040A25A356720041B152 /* CCViewControllerBase.h */,
+				420A040B25A356720041B152 /* CCViewControllerBase.m */,
+				42B0F63525A200E800DEBBA9 /* CCTableViewController.h */,
+				42B0F63625A200E800DEBBA9 /* CCTableViewController.m */,
 				42934E3125A1A57700219C92 /* AppDelegate.h */,
 				42934E3225A1A57700219C92 /* AppDelegate.m */,
 				42934E3425A1A57700219C92 /* SceneDelegate.h */,
 				42934E3525A1A57700219C92 /* SceneDelegate.m */,
-				42934E3725A1A57700219C92 /* ViewController.h */,
-				42934E3825A1A57700219C92 /* ViewController.m */,
 				42934E3A25A1A57700219C92 /* Main.storyboard */,
 				42934E3D25A1A57800219C92 /* Assets.xcassets */,
 				42934E3F25A1A57800219C92 /* LaunchScreen.storyboard */,
 				42934E4225A1A57800219C92 /* Info.plist */,
 				42934E4325A1A57800219C92 /* main.m */,
-				42B0F63525A200E800DEBBA9 /* CCTableViewController.h */,
-				42B0F63625A200E800DEBBA9 /* CCTableViewController.m */,
-				42B0F64E25A2064800DEBBA9 /* SimpleImageFilter.h */,
-				42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */,
-				420A040A25A356720041B152 /* CCViewControllerBase.h */,
-				420A040B25A356720041B152 /* CCViewControllerBase.m */,
-				420A040E25A3570E0041B152 /* BeautifyFace.h */,
-				420A040F25A3570E0041B152 /* BeautifyFace.m */,
 			);
 			path = CCGPUImageExample;
 			sourceTree = "<group>";
@@ -234,7 +237,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42934E3925A1A57700219C92 /* ViewController.m in Sources */,
 				420A041025A3570E0041B152 /* BeautifyFace.m in Sources */,
 				420A040C25A356720041B152 /* CCViewControllerBase.m in Sources */,
 				42934E3325A1A57700219C92 /* AppDelegate.m in Sources */,

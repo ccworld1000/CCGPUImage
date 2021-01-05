@@ -16,8 +16,8 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CCGPUImage"
-  spec.version      = "0.1.9"
-  spec.summary      = "An open source iOS framework for GPU-based image and video processing."
+  spec.version      = "0.1.10"
+  spec.summary      = "CCGPUImage change for GPUImage, An open source iOS framework for GPU-based image and video processing."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
-  CCGPUImage , An open source iOS framework for GPU-based image and video processing.
+  CCGPUImage adjust for GPUImage , An open source iOS framework for GPU-based image and video processing.
                    DESC
 
   spec.homepage     = "https://github.com/ccworld1000/CCGPUImage"

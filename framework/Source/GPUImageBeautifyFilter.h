@@ -12,4 +12,8 @@
 
 @interface GPUImageBeautifyFilter : GPUImageFilterGroup
 
+/// One key beauty
+/// @param sourceImage source image
++ (UIImage *)beautifyWithImage: (UIImage *)sourceImage;
+
 @end
