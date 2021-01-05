@@ -12,10 +12,4 @@
 
 @interface GPUImageBeautifyFilter : GPUImageFilterGroup
 
-#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
-/// One key beauty
-/// @param sourceImage source image
-+ (UIImage *)beautifyWithImage: (UIImage *)sourceImage;
-#endif
-
 @end

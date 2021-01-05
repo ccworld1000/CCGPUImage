@@ -47,7 +47,7 @@
 }
 
 - (void)refresBottomImage {
-    self.bottomImage.image = [GPUImageBeautifyFilter beautifyWithImage: self.topImage.image];
+    self.bottomImage.image = [UIImage imageWithCGImage:[[[GPUImageBeautifyFilter alloc] init] newCGImageByFilteringImage:self.topImage.image]];
 }
 
 

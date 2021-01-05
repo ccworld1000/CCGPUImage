@@ -83,22 +83,6 @@ NSString *const kGPUImageBeautifyFragmentShaderString = SHADER_STRING
 
 @implementation GPUImageBeautifyFilter
 
-#if TARGET_IPHONE_SIMULATOR || TARGET_OS_IPHONE
-+ (UIImage *)beautifyWithImage: (UIImage *)sourceImage {
-    UIImage *beautify = nil;
-    
-    if (sourceImage) {
-        CGImageRef output = [[self new] newCGImageByFilteringImage:sourceImage];
-        if (output) {
-            beautify = [UIImage imageWithCGImage:output];
-            CGImageRelease(output);
-        }
-    }
-    
-    return beautify;
-}
-#endif
-
 - (instancetype)init;
 {
     if (!(self = [super init]))
