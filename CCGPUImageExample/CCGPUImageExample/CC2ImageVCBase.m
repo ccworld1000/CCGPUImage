@@ -40,9 +40,14 @@
     self.bottomImage = bottom;
 }
 
+- (void)refresBottomImage {
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresBottomImage)];
     
     [self loadImageView];
 }

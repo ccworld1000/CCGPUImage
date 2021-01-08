@@ -140,13 +140,6 @@
 - (void)dealloc
 {
     [playerItemOutput setDelegate:nil queue:nil];
-    
-    // Moved into endProcessing
-    //if (self.playerItem && (displayLink != nil))
-    //{
-    //    [displayLink invalidate]; // remove from all run loops
-    //    displayLink = nil;
-    //}
 }
 
 #pragma mark -
@@ -639,10 +632,7 @@ static CVReturn renderCallback(CVDisplayLinkRef displayLink,
             glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
             glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
-//            if (!allTargetsWantMonochromeData)
-//            {
-                [self convertYUVToRGBOutput];
-//            }
+            [self convertYUVToRGBOutput];
 
             for (id<GPUImageInput> currentTarget in targets)
             {

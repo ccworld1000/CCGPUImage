@@ -25,3 +25,6 @@ pod 'CCGPUImage'
 
 ![SimpleImageFilter.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/SimpleImageFilter.png?raw=true)
 
+# RGBFilter effect
+
+![RGBFilter.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/RGBFilter.png?raw=true)

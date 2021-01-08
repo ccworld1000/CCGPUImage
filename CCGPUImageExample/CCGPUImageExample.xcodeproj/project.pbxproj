@@ -16,6 +16,7 @@
 		42934E3E25A1A57800219C92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3D25A1A57800219C92 /* Assets.xcassets */; };
 		42934E4125A1A57800219C92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42934E3F25A1A57800219C92 /* LaunchScreen.storyboard */; };
 		42934E4425A1A57800219C92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42934E4325A1A57800219C92 /* main.m */; };
+		429783B625A81A6400108767 /* RGBFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 429783B525A81A6400108767 /* RGBFilter.m */; };
 		42B0F63725A200E800DEBBA9 /* CCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B0F63625A200E800DEBBA9 /* CCTableViewController.m */; };
 		42B0F65025A2064800DEBBA9 /* SimpleImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */; };
 		AB75DDFA4675B9B283BE09DF /* Pods_CCGPUImageExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A087DE96BFC48B45DE767D34 /* Pods_CCGPUImageExample.framework */; };
@@ -39,6 +40,8 @@
 		42934E4025A1A57800219C92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42934E4225A1A57800219C92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42934E4325A1A57800219C92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		429783B425A81A6400108767 /* RGBFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGBFilter.h; sourceTree = "<group>"; };
+		429783B525A81A6400108767 /* RGBFilter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGBFilter.m; sourceTree = "<group>"; };
 		42B0F63525A200E800DEBBA9 /* CCTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCTableViewController.h; sourceTree = "<group>"; };
 		42B0F63625A200E800DEBBA9 /* CCTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCTableViewController.m; sourceTree = "<group>"; };
 		42B0F64E25A2064800DEBBA9 /* SimpleImageFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SimpleImageFilter.h; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 				42B0F64F25A2064800DEBBA9 /* SimpleImageFilter.m */,
 				420A040E25A3570E0041B152 /* BeautifyFace.h */,
 				420A040F25A3570E0041B152 /* BeautifyFace.m */,
+				429783B425A81A6400108767 /* RGBFilter.h */,
+				429783B525A81A6400108767 /* RGBFilter.m */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 				42B0F63725A200E800DEBBA9 /* CCTableViewController.m in Sources */,
 				42934E3625A1A57700219C92 /* SceneDelegate.m in Sources */,
 				42B0F65025A2064800DEBBA9 /* SimpleImageFilter.m in Sources */,
+				429783B625A81A6400108767 /* RGBFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

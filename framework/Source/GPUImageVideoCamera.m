@@ -155,12 +155,7 @@ void setColorConversion709( GLfloat conversionMatrix[9] )
         if (captureAsYUV)
         {
             [GPUImageContext useImageProcessingContext];
-            //            if ([GPUImageContext deviceSupportsRedTextures])
-            //            {
-            //                yuvConversionProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:kGPUImageVertexShaderString fragmentShaderString:kGPUImageYUVVideoRangeConversionForRGFragmentShaderString];
-            //            }
-            //            else
-            //            {
+  
             if (isFullYUVRange)
             {
                 yuvConversionProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:kGPUImageVertexShaderString fragmentShaderString:kGPUImageYUVFullRangeConversionForLAFragmentShaderString];
@@ -170,8 +165,6 @@ void setColorConversion709( GLfloat conversionMatrix[9] )
                 yuvConversionProgram = [[GPUImageContext sharedImageProcessingContext] programForVertexShaderString:kGPUImageVertexShaderString fragmentShaderString:kGPUImageYUVVideoRangeConversionForLAFragmentShaderString];
             }
 
-            //            }
-            
             if (!yuvConversionProgram.initialized)
             {
                 [yuvConversionProgram addAttribute:@"position"];
@@ -697,10 +690,7 @@ void setColorConversion709( GLfloat conversionMatrix[9] )
             glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
             glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
             
-//            if (!allTargetsWantMonochromeData)
-//            {
-                [self convertYUVToRGBOutput];
-//            }
+            [self convertYUVToRGBOutput];
 
             int rotatedImageBufferWidth = bufferWidth, rotatedImageBufferHeight = bufferHeight;
             
