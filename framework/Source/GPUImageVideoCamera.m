@@ -235,14 +235,6 @@ void setColorConversion709( GLfloat conversionMatrix[9] )
     [audioOutput setSampleBufferDelegate:nil queue:dispatch_get_main_queue()];
     
     [self removeInputsAndOutputs];
-    
-// ARC forbids explicit message send of 'release'; since iOS 6 even for dispatch_release() calls: stripping it out in that case is required.
-#if !OS_OBJECT_USE_OBJC
-    if (frameRenderingSemaphore != NULL)
-    {
-        dispatch_release(frameRenderingSemaphore);
-    }
-#endif
 }
 
 - (BOOL)addAudioInputsAndOutputs

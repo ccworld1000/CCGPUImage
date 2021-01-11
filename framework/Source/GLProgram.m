@@ -96,10 +96,7 @@ typedef void (*GLLogFunction) (GLuint program, GLsizei bufsize, GLsizei* length,
 //    CFAbsoluteTime startTime = CFAbsoluteTimeGetCurrent();
 
     GLint status;
-    const GLchar *source;
-    
-    source = 
-      (GLchar *)[shaderString UTF8String];
+    const GLchar *source = (GLchar *)[shaderString UTF8String];
     if (!source)
     {
         NSLog(@"Failed to load vertex shader");

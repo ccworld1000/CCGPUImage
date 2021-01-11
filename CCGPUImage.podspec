@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CCGPUImage"
-  spec.version      = "0.1.12"
+  spec.version      = "0.1.13"
   spec.summary      = "CCGPUImage change for GPUImage, An open source iOS framework for GPU-based image and video processing."
 
   # This description is used to generate tags and improve search results.
@@ -26,6 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
   CCGPUImage adjust for GPUImage , An open source iOS framework for GPU-based image and video processing.
+  CCGPUImageExample for CCGPUImage Example, https://github.com/ccworld1000/CCGPUImageExample.
                    DESC
 
   spec.homepage     = "https://github.com/ccworld1000/CCGPUImage"
@@ -39,7 +40,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "BSD"
+  spec.license      = "GPL2"
   # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -69,7 +70,7 @@ Pod::Spec.new do |spec|
 
   #  When using multiple platforms
   spec.ios.deployment_target = "9.0"
-  spec.osx.deployment_target = "10.6"
+  spec.osx.deployment_target = "10.8"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 

@@ -148,17 +148,6 @@ NSString *const kGPUImageColorSwizzlingFragmentShaderString = SHADER_STRING
 - (void)dealloc;
 {
     [self destroyDataFBO];
-
-#if !OS_OBJECT_USE_OBJC
-    if( audioQueue != NULL )
-    {
-        dispatch_release(audioQueue);
-    }
-    if( videoQueue != NULL )
-    {
-        dispatch_release(videoQueue);
-    }
-#endif
 }
 
 #pragma mark -

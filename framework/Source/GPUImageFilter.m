@@ -156,12 +156,6 @@ NSString *const kGPUImagePassthroughFragmentShaderString = SHADER_STRING
 
 - (void)dealloc
 {
-#if !OS_OBJECT_USE_OBJC
-    if (imageCaptureSemaphore != NULL)
-    {
-        dispatch_release(imageCaptureSemaphore);
-    }
-#endif
 
 }
 

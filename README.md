@@ -1,4 +1,4 @@
-# CCGPUImage/GPUImage #
+# CCGPUImage/GPUImage/CCGPUImageExample #
 
 [CCGPUImage](https://github.com/ccworld1000/CCGPUImage) change for GPUImage, An open source iOS framework for GPU-based image and video processing.
 
@@ -8,23 +8,27 @@
 pod 'CCGPUImage'
 ```
 
+# CCGPUImageExample
+
+CCGPUImageExample for CCGPUImage Example, [https://github.com/ccworld1000/CCGPUImageExample](https://github.com/ccworld1000/CCGPUImageExample).
+
 # Add One key beauty [加入一键美颜], From 0.1.10
 
 ```objective-c
 // @see CCGPUImageExample -> BeautifyFace
 - (void)refresBottomImage {
-    self.bottomImage.image = [UIImage imageWithCGImage:[[[GPUImageBeautifyFilter alloc] init] newCGImageByFilteringImage:self.topImage.image]];
+    self.bottomImage.image = [[[GPUImageBeautifyFilter alloc] init] imageByFilteringImage:self.topImage.image];
 }
 ```
 
 # BeautifyFace effect
 
-![BeautifyFace.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/BeautifyFace.png?raw=true)
+![BeautifyFace.jpg](https://raw.githubusercontent.com/ccworld1000/CCGPUImageExample/main/Screenshots/BeautifyFace.jpg)
 
 # SimpleImageFilter effect
 
-![SimpleImageFilter.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/SimpleImageFilter.png?raw=true)
+![SimpleImageFilter.jpg](https://raw.githubusercontent.com/ccworld1000/CCGPUImageExample/main/Screenshots/SimpleImageFilter.jpg)
 
 # RGBFilter effect
 
-![RGBFilter.png](https://github.com/ccworld1000/CCGPUImage/blob/master/Screenshots/RGBFilter.png?raw=true)
+![RGBFilter.jpg](https://raw.githubusercontent.com/ccworld1000/CCGPUImageExample/main/Screenshots//RGBFilter.jpg)

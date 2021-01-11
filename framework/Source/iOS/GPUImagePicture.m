@@ -282,18 +282,10 @@
     return self;
 }
 
-// ARC forbids explicit message send of 'release'; since iOS 6 even for dispatch_release() calls: stripping it out in that case is required.
 - (void)dealloc;
 {
     [outputFramebuffer enableReferenceCounting];
     [outputFramebuffer unlock];
-
-#if !OS_OBJECT_USE_OBJC
-    if (imageUpdateSemaphore != NULL)
-    {
-        dispatch_release(imageUpdateSemaphore);
-    }
-#endif
 }
 
 #pragma mark -
